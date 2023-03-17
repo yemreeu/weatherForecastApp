@@ -11,7 +11,7 @@ function Form(props) {
 
   const  handleChange = async() => {
     const api = "6ecec1a22258a06be3fc8f9a4a8b6c34";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric&lang=tr`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric&`;
     await axios(url).then(res => setInfo(res.data));
     setState(true);
    

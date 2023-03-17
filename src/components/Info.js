@@ -17,7 +17,8 @@ function Info(props) {
                 <p id="temperature">{Math.ceil(info.main.temp)}  <span><TbTemperatureCelsius /></span></p>
                 
               </div>
-              <p id="felt-temperature"> But feels like : {Math.ceil(info.main.feels_like)} <span><TbTemperatureCelsius /></span></p> 
+              <p>{info.weather[0].description}</p>
+              <p id="felt-temperature"> Feels like : {Math.ceil(info.main.feels_like)} <span><TbTemperatureCelsius /></span></p> 
             </div> : null
         }
     </div>
